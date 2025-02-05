@@ -35,9 +35,30 @@ footer{
     font-size:75%;
 }
 
+table, td, th{
+    border:2px solid #3399CC;
+    border-collapse:collapse;
+}
+
+td,th{
+    padding:0.5em;
+}
+
+td{
+    text-align:center;
+}
+
+tbody > tr:nth-of-type(odd) {
+    background-color: #8cdeff;
+}
+
 .resort {
     color:#5C7FA3;
     font-weight:bold;
+}
+
+.left {
+    text-align:left;
 }
 
 #contact {
