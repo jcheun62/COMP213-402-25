@@ -52,6 +52,14 @@ tbody > tr:nth-of-type(odd) {
     background-color: #8cdeff;
 }
 
+label,textarea{
+    display:block;
+}
+
+input,textarea{
+    margin-bottom:1.5em;
+}
+
 .resort {
     color:#5C7FA3;
     font-weight:bold;
