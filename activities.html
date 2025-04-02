@@ -32,10 +32,25 @@
                 <h3>Bird Watching</h3>
                 <p>While anytime is a good time for bird watching at Pacific Trails. We offer guided bird
                 watching trips at sunrise several times a week</p>
+
+                <div id="thumbnails">
+                    <img alt="" width="150" height="112" src="images/photo1.jpg" onclick="swapImage(this)">
+                    <img alt="" width="150" height="112" src="images/photo2.jpg" onclick="swapImage(this)">
+                    <img alt="" width="150" height="112" src="images/photo3.jpg" onclick="swapImage(this)">
+                    <img alt="" width="150" height="112" src="images/photo4.jpg" onclick="swapImage(this)">
+                </div>
+                <img id="bigImage" alt="" width="400" height="300" src="images/photo1.jpg">
+
             </main>
             <footer>
                 Copyright &copy; 2025 Pacific Trails Resort
             </footer>
         </div>
+        <script>
+            function swapImage(clicked) {
+                var bigImage = document.getElementById("bigImage");
+                bigImage.src = clicked.src;
+            }
+        </script>
     </body>
 </html>

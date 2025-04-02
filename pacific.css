@@ -41,6 +41,12 @@ nav ul{
     padding-left:0px;
 }
 
+nav a {
+    transition-duration: 3s;
+    transition-property: color;
+    transition-timing-function: ease-out;
+}
+
 nav a:link {
     color:#5C7FA3;
 }
@@ -111,6 +117,11 @@ input,textarea{
     margin-bottom:1.5em;
 }
 
+video{
+    float:right;
+    padding-left:20px;
+}
+
 .resort {
     color:#5C7FA3;
     font-weight:bold;
@@ -161,6 +172,18 @@ input,textarea{
 #mobile{
     display:none;
 }
+
+#thumbnails{
+    display:flex;
+    justify-content:space-around;
+}
+
+#bigImage{
+    display:block;
+    margin:auto;
+    margin-top:20px;
+}
+
 
 @media only screen and (max-width:1024px) {
     body{
@@ -218,6 +241,12 @@ input,textarea{
     nav a{
         display:block;
     }
+    video{
+        float:none;
+        padding-left:0px;
+        display:block;
+        margin:auto;
+    }
     #homehero,#yurthero,#trailhero{
         display:none;
     }
@@ -226,5 +255,11 @@ input,textarea{
     }
     #mobile{
         display:inline;
+    }
+    #thumbnails{
+        display:none;
+    }
+    #bigImage{
+        display:none;
     }
 }
